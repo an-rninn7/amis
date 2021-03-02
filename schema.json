@@ -783,6 +783,14 @@
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
         },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
+        },
         "actionType": {
           "type": "string",
           "const": "ajax",
@@ -1195,6 +1203,14 @@
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
         },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
+        },
         "actionType": {
           "type": "string",
           "const": "url",
@@ -1356,6 +1372,14 @@
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
         },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
+        },
         "actionType": {
           "type": "string",
           "const": "link",
@@ -1512,6 +1536,14 @@
         "target": {
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
+        },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
         },
         "actionType": {
           "type": "string",
@@ -1679,6 +1711,14 @@
         "target": {
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
+        },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
         },
         "actionType": {
           "type": "string",
@@ -1960,6 +2000,14 @@
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
         },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
+        },
         "actionType": {
           "type": "string",
           "const": "copy",
@@ -2117,6 +2165,14 @@
           "$ref": "#/definitions/SchemaReload",
           "description": "指定目标组件。"
         },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
+        },
         "actionType": {
           "type": "string",
           "const": "reload",
@@ -2268,6 +2324,14 @@
         "target": {
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
+        },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
         },
         "actionType": {
           "type": "string",
@@ -2428,6 +2492,14 @@
         "target": {
           "type": "string",
           "description": "可以指定让谁来触发这个动作。"
+        },
+        "countDown": {
+          "type": "number",
+          "description": "点击后的禁止倒计时（秒）"
+        },
+        "countDownTpl": {
+          "type": "string",
+          "description": "倒计时文字自定义"
         },
         "actionType": {
           "type": "string"
@@ -4136,6 +4208,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "ajax",
@@ -4535,6 +4615,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "url",
@@ -4926,6 +5014,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "link",
@@ -5312,6 +5408,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -5710,6 +5814,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "drawer",
@@ -6107,6 +6219,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "copy",
@@ -6494,6 +6614,14 @@
               "$ref": "#/definitions/SchemaReload",
               "description": "指定目标组件。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "reload",
@@ -6874,6 +7002,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -7265,6 +7401,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string"
@@ -28164,6 +28308,14 @@
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "ajax",
@@ -28337,6 +28489,14 @@
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "url",
@@ -28502,6 +28662,14 @@
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "link",
@@ -28662,6 +28830,14 @@
                 "target": {
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
+                },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
                 },
                 "actionType": {
                   "type": "string",
@@ -28834,6 +29010,14 @@
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "drawer",
@@ -29005,6 +29189,14 @@
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "copy",
@@ -29166,6 +29358,14 @@
                   "$ref": "#/definitions/SchemaReload",
                   "description": "指定目标组件。"
                 },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
+                },
                 "actionType": {
                   "type": "string",
                   "const": "reload",
@@ -29320,6 +29520,14 @@
                 "target": {
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
+                },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
                 },
                 "actionType": {
                   "type": "string",
@@ -29485,6 +29693,14 @@
                 "target": {
                   "type": "string",
                   "description": "可以指定让谁来触发这个动作。"
+                },
+                "countDown": {
+                  "type": "number",
+                  "description": "点击后的禁止倒计时（秒）"
+                },
+                "countDownTpl": {
+                  "type": "string",
+                  "description": "倒计时文字自定义"
                 },
                 "actionType": {
                   "type": "string"
@@ -38466,6 +38682,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "ajax",
@@ -38494,7 +38718,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|ignoreConfirm|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|api|feedback|reload|redirect|ignoreConfirm|unique|columnClassName)$": {}
           }
         },
         {
@@ -38867,6 +39091,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -38888,7 +39120,7 @@
             "url"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|blank|url|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|blank|url|unique|columnClassName)$": {}
           }
         },
         {
@@ -39261,6 +39493,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -39278,7 +39518,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|link|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|link|unique|columnClassName)$": {}
           }
         },
         {
@@ -39651,6 +39891,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -39678,7 +39926,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|dialog|nextCondition|reload|redirect|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|dialog|nextCondition|reload|redirect|unique|columnClassName)$": {}
           }
         },
         {
@@ -40051,6 +40299,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -40078,7 +40334,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|drawer|nextCondition|reload|redirect|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|drawer|nextCondition|reload|redirect|unique|columnClassName)$": {}
           }
         },
         {
@@ -40452,6 +40708,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "copy",
@@ -40468,7 +40732,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|copy|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|copy|unique|columnClassName)$": {}
           }
         },
         {
@@ -40842,6 +41106,14 @@
               "$ref": "#/definitions/SchemaReload",
               "description": "指定目标组件。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "reload",
@@ -40853,7 +41125,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|unique|columnClassName)$": {}
           }
         },
         {
@@ -41225,6 +41497,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -41247,7 +41527,7 @@
           ],
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|unique|columnClassName)$": {}
           }
         },
         {
@@ -41621,6 +41901,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string"
             }
@@ -41629,7 +41917,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|unique|columnClassName)$": {}
           }
         }
       ]
@@ -42419,6 +42707,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "ajax",
@@ -42447,7 +42743,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|ignoreConfirm|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|api|feedback|reload|redirect|ignoreConfirm|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -42820,6 +43116,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -42841,7 +43145,7 @@
             "url"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|blank|url|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|blank|url|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -43214,6 +43518,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -43231,7 +43543,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|link|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|link|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -43604,6 +43916,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -43631,7 +43951,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|dialog|nextCondition|reload|redirect|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|dialog|nextCondition|reload|redirect|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -44004,6 +44324,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -44031,7 +44359,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|drawer|nextCondition|reload|redirect|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|drawer|nextCondition|reload|redirect|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -44405,6 +44733,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "copy",
@@ -44421,7 +44757,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|copy|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|copy|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -44795,6 +45131,14 @@
               "$ref": "#/definitions/SchemaReload",
               "description": "指定目标组件。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string",
               "const": "reload",
@@ -44806,7 +45150,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -45178,6 +45522,14 @@
             "target": {
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
+            },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
             },
             "actionType": {
               "type": "string",
@@ -45200,7 +45552,7 @@
           ],
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -45574,6 +45926,14 @@
               "type": "string",
               "description": "可以指定让谁来触发这个动作。"
             },
+            "countDown": {
+              "type": "number",
+              "description": "点击后的禁止倒计时（秒）"
+            },
+            "countDownTpl": {
+              "type": "string",
+              "description": "倒计时文字自定义"
+            },
             "actionType": {
               "type": "string"
             }
@@ -45582,7 +45942,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|countDown|countDownTpl|actionType|columnClassName|columnRatio)$": {}
           }
         }
       ]
