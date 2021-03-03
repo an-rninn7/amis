@@ -9692,11 +9692,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_292ea75.js",
+      "url": "/amis/pkg/app_19c5268.js",
       "type": "js"
     },
     "p1": {
-      "url": "/amis/pkg/rich-text_5b6e508.js",
+      "url": "/amis/pkg/rich-text_f2b1840.js",
       "type": "js"
     },
     "p4": {
