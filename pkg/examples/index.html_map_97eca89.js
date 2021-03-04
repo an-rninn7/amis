@@ -5966,7 +5966,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/start/faq.md": {
-      "url": "/amis/docs/zh-CN/start/faq_cdb9914.js",
+      "url": "/amis/docs/zh-CN/start/faq_777af85.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/schema.md": {
@@ -5974,7 +5974,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/datascope-and-datachain.md": {
-      "url": "/amis/docs/zh-CN/concepts/datascope-and-datachain_1aa657e.js",
+      "url": "/amis/docs/zh-CN/concepts/datascope-and-datachain_f5e5b57.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/template.md": {
@@ -5982,7 +5982,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/data-mapping.md": {
-      "url": "/amis/docs/zh-CN/concepts/data-mapping_7f5408f.js",
+      "url": "/amis/docs/zh-CN/concepts/data-mapping_7a3220c.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/expression.md": {
@@ -6010,7 +6010,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/types/api.md": {
-      "url": "/amis/docs/zh-CN/types/api_948a3fc.js",
+      "url": "/amis/docs/zh-CN/types/api_6f8f83a.js",
       "type": "js"
     },
     "docs/zh-CN/types/definitions.md": {
@@ -6362,7 +6362,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/wrapper.md": {
-      "url": "/amis/docs/zh-CN/components/wrapper_c8dc364.js",
+      "url": "/amis/docs/zh-CN/components/wrapper_95c1c40.js",
       "type": "js"
     },
     "docs/zh-CN/components/action.md": {
