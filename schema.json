@@ -3000,6 +3000,10 @@
           "type": "string",
           "description": "弹框外层类名"
         },
+        "popOverEnableOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "配置当前行是否启动，要用表达式"
+        },
         "mode": {
           "type": "string",
           "enum": [
