@@ -25020,6 +25020,14 @@
         "option": {
           "type": "string",
           "description": "选项说明"
+        },
+        "onText": {
+          "type": "string",
+          "description": "开启时显示的文本"
+        },
+        "offText": {
+          "type": "string",
+          "description": "关闭时显示的文本"
         }
       },
       "required": [
@@ -26524,7 +26532,7 @@
         },
         "name": {
           "type": "string",
-          "description": "字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c"
+          "description": "如果配置了名称，Tabs 的打开项会同步写入变量中。"
         },
         "remark": {
           "$ref": "#/definitions/SchemaRemark",
@@ -26770,6 +26778,10 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "value": {
+          "type": "string",
+          "description": "Tab 值, 当作为表当项使用时，这个值可以写入到表单中。"
+        },
         "controls": {
           "type": "array",
           "items": {
@@ -36535,6 +36547,14 @@
           "description": "默认为只读，要开启编辑请配置这个为 false",
           "default": true
         },
+        "onText": {
+          "type": "string",
+          "description": "开启时显示的文本"
+        },
+        "offText": {
+          "type": "string",
+          "description": "关闭时显示的文本"
+        },
         "saveImmediately": {
           "type": "boolean",
           "description": "是否立即保存。关乎到是否立即调用保存接口。"
@@ -38270,7 +38290,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -42275,7 +42295,7 @@
           "$ref": "#/definitions/SwitchControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|trueValue|falseValue|option|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|trueValue|falseValue|option|onText|offText|unique|columnClassName)$": {}
           }
         },
         {
@@ -46300,7 +46320,7 @@
           "$ref": "#/definitions/SwitchControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|trueValue|falseValue|option|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|trueValue|falseValue|option|onText|offText|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -46694,7 +46714,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         },
         {
@@ -47068,7 +47088,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -47442,7 +47462,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -47816,7 +47836,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -48190,7 +48210,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -48564,7 +48584,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -48938,7 +48958,7 @@
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|onText|offText|saveImmediately|rowClassName|cellClassName)$": {}
           }
         },
         {

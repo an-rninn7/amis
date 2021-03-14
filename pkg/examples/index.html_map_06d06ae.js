@@ -5998,7 +5998,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/style.md": {
-      "url": "/amis/docs/zh-CN/concepts/style_a8cf7d3.js",
+      "url": "/amis/docs/zh-CN/concepts/style_0055b05.js",
       "type": "js"
     },
     "docs/zh-CN/types/schemanode.md": {
@@ -6381,6 +6381,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/button-group_fef41f0.js",
       "type": "js"
     },
+    "docs/zh-CN/components/breadcrumb.md": {
+      "url": "/amis/docs/zh-CN/components/breadcrumb_bf9ec17.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/custom.md": {
       "url": "/amis/docs/zh-CN/components/custom_6a2e01a.js",
       "type": "js"
@@ -6434,7 +6438,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/checkboxes.md": {
-      "url": "/amis/docs/zh-CN/components/form/checkboxes_713e522.js",
+      "url": "/amis/docs/zh-CN/components/form/checkboxes_1adfb39.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/city.md": {
@@ -6594,7 +6598,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/switch.md": {
-      "url": "/amis/docs/zh-CN/components/form/switch_d552c0d.js",
+      "url": "/amis/docs/zh-CN/components/form/switch_5e43034.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/static.md": {
@@ -6602,7 +6606,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/tabs.md": {
-      "url": "/amis/docs/zh-CN/components/form/tabs_cd0529d.js",
+      "url": "/amis/docs/zh-CN/components/form/tabs_30cab3c.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/table.md": {
@@ -6618,7 +6622,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/textarea.md": {
-      "url": "/amis/docs/zh-CN/components/form/textarea_d4a3790.js",
+      "url": "/amis/docs/zh-CN/components/form/textarea_91cf0b5.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/time.md": {
@@ -6742,7 +6746,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/switch.md": {
-      "url": "/amis/docs/zh-CN/components/switch_e0a1a95.js",
+      "url": "/amis/docs/zh-CN/components/switch_0588e96.js",
       "type": "js"
     },
     "docs/zh-CN/components/tpl.md": {
