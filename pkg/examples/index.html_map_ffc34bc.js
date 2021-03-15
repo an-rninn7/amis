@@ -5966,7 +5966,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/start/faq.md": {
-      "url": "/amis/docs/zh-CN/start/faq_777af85.js",
+      "url": "/amis/docs/zh-CN/start/faq_190b8c5.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/schema.md": {
@@ -6337,6 +6337,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/divider_94da4f0.js",
       "type": "js"
     },
+    "docs/zh-CN/components/flex.md": {
+      "url": "/amis/docs/zh-CN/components/flex_6b1ca0e.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/grid.md": {
       "url": "/amis/docs/zh-CN/components/grid_59f9d3f.js",
       "type": "js"
@@ -6642,7 +6646,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/treeselect.md": {
-      "url": "/amis/docs/zh-CN/components/form/treeselect_c64b846.js",
+      "url": "/amis/docs/zh-CN/components/form/treeselect_06aaecf.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/year.md": {
@@ -6650,7 +6654,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/crud.md": {
-      "url": "/amis/docs/zh-CN/components/crud_c1b5992.js",
+      "url": "/amis/docs/zh-CN/components/crud_e60a739.js",
       "type": "js"
     },
     "docs/zh-CN/components/table.md": {

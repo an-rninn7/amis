@@ -512,6 +512,10 @@
         "inline": {
           "type": "boolean",
           "description": "是否内联显示？"
+        },
+        "style": {
+          "type": "object",
+          "description": "自定义样式"
         }
       },
       "required": [
@@ -34617,7 +34621,7 @@
         "type": {
           "type": "string",
           "const": "grid-2d",
-          "description": "指定为each展示类型"
+          "description": "指定为 grid-2d 展示类型"
         },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
@@ -37990,7 +37994,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -46414,7 +46418,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         },
         {
@@ -46788,7 +46792,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -47162,7 +47166,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -47536,7 +47540,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -47910,7 +47914,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -48284,7 +48288,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|columnClassName|width|height)$": {}
           }
         },
         {
@@ -48658,7 +48662,7 @@
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|style|rowClassName|cellClassName)$": {}
           }
         },
         {
