@@ -9710,7 +9710,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_4a87b9f.js",
+      "url": "/amis/pkg/app_c96f5a4.js",
       "type": "js"
     },
     "p1": {
