@@ -451,6 +451,9 @@
         },
         {
           "$ref": "#/definitions/FormSchema"
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema"
         }
       ]
     },
@@ -3352,6 +3355,9 @@
         },
         {
           "$ref": "#/definitions/TreeSelectControlSchema"
+        },
+        {
+          "$ref": "#/definitions/AnchorNavControlSchema"
         },
         {
           "$ref": "#/definitions/DividerSchema"
@@ -31479,6 +31485,392 @@
       "additionalProperties": false,
       "description": "Tree 下拉选择框。 文档：https://baidu.gitee.io/amis/docs/components/form/tree"
     },
+    "AnchorNavControlSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "anchor-nav",
+          "description": "表单项类型"
+        },
+        "active": {
+          "type": [
+            "string",
+            "number"
+          ],
+          "description": "被激活（定位）的楼层"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "linkClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "导航样式名"
+        },
+        "sectionClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "楼层样式名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "full"
+          ],
+          "description": "表单项大小"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean",
+              "const": false
+            }
+          ],
+          "description": "描述标题"
+        },
+        "labelClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置 label className"
+        },
+        "name": {
+          "type": "string",
+          "description": "字段名，表单提交时的 key，支持多层级，用.连接，如： a.b.c"
+        },
+        "remark": {
+          "$ref": "#/definitions/SchemaRemark",
+          "description": "显示一个小图标, 鼠标放上去的时候显示提示内容"
+        },
+        "labelRemark": {
+          "$ref": "#/definitions/SchemaRemark",
+          "description": "显示一个小图标, 鼠标放上去的时候显示提示内容, 这个小图标跟 label 在一起"
+        },
+        "hint": {
+          "type": "string",
+          "description": "输入提示，聚焦的时候显示"
+        },
+        "submitOnChange": {
+          "type": "boolean",
+          "description": "当修改完的时候是否提交表单。"
+        },
+        "readOnly": {
+          "type": "boolean",
+          "description": "是否只读"
+        },
+        "validateOnChange": {
+          "type": "boolean",
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+        },
+        "description": {
+          "type": "string",
+          "description": "描述内容，支持 Html 片段。"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "descriptionClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置描述上的 className"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "normal",
+            "inline",
+            "horizontal"
+          ],
+          "description": "配置当前表单项展示模式"
+        },
+        "horizontal": {
+          "$ref": "#/definitions/FormSchemaHorizontal",
+          "description": "当配置为水平布局的时候，用来配置具体的左右分配。"
+        },
+        "inline": {
+          "type": "boolean",
+          "description": "表单 control 是否为 inline 模式。"
+        },
+        "inputClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置 input className"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "占位符"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "是否为必填"
+        },
+        "validationErrors": {
+          "type": "object",
+          "properties": {
+            "isAlpha": {
+              "type": "string"
+            },
+            "isAlphanumeric": {
+              "type": "string"
+            },
+            "isEmail": {
+              "type": "string"
+            },
+            "isFloat": {
+              "type": "string"
+            },
+            "isInt": {
+              "type": "string"
+            },
+            "isJson": {
+              "type": "string"
+            },
+            "isLength": {
+              "type": "string"
+            },
+            "isNumeric": {
+              "type": "string"
+            },
+            "isRequired": {
+              "type": "string"
+            },
+            "isUrl": {
+              "type": "string"
+            },
+            "matchRegexp": {
+              "type": "string"
+            },
+            "matchRegexp2": {
+              "type": "string"
+            },
+            "matchRegexp3": {
+              "type": "string"
+            },
+            "matchRegexp4": {
+              "type": "string"
+            },
+            "matchRegexp5": {
+              "type": "string"
+            },
+            "maxLength": {
+              "type": "string"
+            },
+            "maximum": {
+              "type": "string"
+            },
+            "minLength": {
+              "type": "string"
+            },
+            "minimum": {
+              "type": "string"
+            }
+          },
+          "description": "验证失败的提示信息"
+        },
+        "validations": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "isAlpha": {
+                  "type": "boolean",
+                  "description": "是否是字母"
+                },
+                "isAlphanumeric": {
+                  "type": "boolean",
+                  "description": "是否为字母数字"
+                },
+                "isEmail": {
+                  "type": "boolean",
+                  "description": "是否为邮箱地址"
+                },
+                "isFloat": {
+                  "type": "boolean",
+                  "description": "是否为浮点型"
+                },
+                "isInt": {
+                  "type": "boolean",
+                  "description": "是否为整型"
+                },
+                "isJson": {
+                  "type": "boolean",
+                  "description": "是否为 json"
+                },
+                "isLength": {
+                  "type": "number",
+                  "description": "长度等于指定值"
+                },
+                "isNumeric": {
+                  "type": "boolean",
+                  "description": "是否为数字"
+                },
+                "isRequired": {
+                  "type": "boolean",
+                  "description": "是否为必填"
+                },
+                "isUrl": {
+                  "type": "boolean",
+                  "description": "是否为 URL 地址"
+                },
+                "matchRegexp": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "matchRegexp1": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "matchRegexp2": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "matchRegexp3": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "matchRegexp4": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "matchRegexp5": {
+                  "type": "string",
+                  "description": "内容命中指定正则"
+                },
+                "maxLength": {
+                  "type": "number",
+                  "description": "最大长度为指定值"
+                },
+                "maximum": {
+                  "type": "number",
+                  "description": "最大值为指定值"
+                },
+                "minLength": {
+                  "type": "number",
+                  "description": "最小长度为指定值"
+                },
+                "minimum": {
+                  "type": "number",
+                  "description": "最小值为指定值"
+                }
+              }
+            }
+          ]
+        },
+        "value": {
+          "description": "默认值，切记只能是静态值，不支持取变量，跟数据关联是通过设置 name 属性来实现的。"
+        },
+        "clearValueOnHidden": {
+          "type": "boolean",
+          "description": "表单项隐藏时，是否在当前 Form 中删除掉该表单项值。注意同名的未隐藏的表单项值也会删掉"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AnchorNavSectionControlSchema"
+          }
+        }
+      },
+      "required": [
+        "links",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "AnchorNav 文档：https://baidu.gitee.io/amis/docs/components/form/anchor-nav"
+    },
+    "AnchorNavSectionControlSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "controls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FormControlSchema"
+          },
+          "description": "表单项集合"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "title": {
+          "type": "string",
+          "description": "导航文字说明"
+        },
+        "href": {
+          "type": "string",
+          "description": "锚点链接"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容"
+        }
+      },
+      "required": [
+        "title"
+      ]
+    },
     "DividerSchema": {
       "type": "object",
       "properties": {
@@ -37981,6 +38373,130 @@
       "additionalProperties": false,
       "description": "Form 表单渲染器。\n\n说明：https://baidu.gitee.io/amis/docs/components/form/index"
     },
+    "AnchorNavSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "anchor-nav",
+          "description": "指定为 AnchorNav 锚点导航渲染器"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "样式名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AnchorNavSectionSchema"
+          },
+          "description": "楼层集合"
+        },
+        "active": {
+          "type": [
+            "string",
+            "number"
+          ],
+          "description": "被激活（定位）的楼层"
+        },
+        "linkClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "导航样式名"
+        },
+        "sectionClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "楼层样式名"
+        }
+      },
+      "required": [
+        "links",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "AnchorNav 锚点导航渲染器 文档：https://baidu.gitee.io/amis/docs/components/anchor-nav"
+    },
+    "AnchorNavSectionSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "title": {
+          "type": "string",
+          "description": "导航文字说明"
+        },
+        "href": {
+          "type": "string",
+          "description": "锚点链接"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "description": "AnchorNavSection 锚点区域渲染器 文档：https://baidu.gitee.io/amis/docs/components/anchor-nav"
+    },
     "SchemaObjectCardBodyField": {
       "anyOf": [
         {
@@ -38351,6 +38867,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         }
       ]
@@ -42369,6 +42892,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|hideRoot|rootLabel|rootValue|showIcon|cascade|withChildren|onlyChildren|rootCreatable|unique|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavControlSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|active|className|linkClassName|sectionClassName|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|links|unique|columnClassName)$": {}
           }
         },
         {
@@ -46397,6 +46927,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AnchorNavControlSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|active|className|linkClassName|sectionClassName|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|links|columnClassName|columnRatio)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -46776,6 +47313,13 @@
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|readOnly|validateOnChange|description|desc|descriptionClassName|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+          }
         }
       ]
     },
@@ -47149,6 +47693,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         }
       ]
@@ -47524,6 +48075,13 @@
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
         }
       ]
     },
@@ -47897,6 +48455,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         }
       ]
@@ -48272,6 +48837,13 @@
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+          }
         }
       ]
     },
@@ -48646,6 +49218,13 @@
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|columnClassName|width|height|style)$": {}
           }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|columnClassName|width|height|style)$": {}
+          }
         }
       ]
     },
@@ -49019,6 +49598,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|clearAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AnchorNavSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|active|linkClassName|sectionClassName|rowClassName|cellClassName)$": {}
           }
         }
       ]

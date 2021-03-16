@@ -6405,6 +6405,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/nav_9c27779.js",
       "type": "js"
     },
+    "docs/zh-CN/components/anchor-nav.md": {
+      "url": "/amis/docs/zh-CN/components/anchor-nav_445718f.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/form/index.md": {
       "url": "/amis/docs/zh-CN/components/form/index_4e1d6a5.js",
       "type": "js"
@@ -6651,6 +6655,10 @@ amis.require.resourceMap({
     },
     "docs/zh-CN/components/form/year.md": {
       "url": "/amis/docs/zh-CN/components/form/year_ee1e8d4.js",
+      "type": "js"
+    },
+    "docs/zh-CN/components/form/anchor-nav.md": {
+      "url": "/amis/docs/zh-CN/components/form/anchor-nav_0b2bb38.js",
       "type": "js"
     },
     "docs/zh-CN/components/crud.md": {
