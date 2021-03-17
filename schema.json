@@ -32923,6 +32923,11 @@
           },
           "description": "单条操作"
         },
+        "perPage": {
+          "type": "number",
+          "description": "每页个数，默认为 10，如果不是请设置。",
+          "default": 10
+        },
         "defaultParams": {
           "$ref": "#/definitions/PlainObject",
           "description": "可以默认给定初始参数如： {\\\"perPage\\\": 24}"
@@ -33399,6 +33404,11 @@
             "$ref": "#/definitions/ActionSchema"
           },
           "description": "单条操作"
+        },
+        "perPage": {
+          "type": "number",
+          "description": "每页个数，默认为 10，如果不是请设置。",
+          "default": 10
         },
         "defaultParams": {
           "$ref": "#/definitions/PlainObject",
@@ -34048,6 +34058,11 @@
             "$ref": "#/definitions/ActionSchema"
           },
           "description": "单条操作"
+        },
+        "perPage": {
+          "type": "number",
+          "description": "每页个数，默认为 10，如果不是请设置。",
+          "default": 10
         },
         "defaultParams": {
           "$ref": "#/definitions/PlainObject",
