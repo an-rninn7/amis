@@ -17963,6 +17963,18 @@
             "$ref": "#/definitions/SchemaTokenizeableString"
           },
           "description": "上传后把其他字段同步到表单内部。"
+        },
+        "defaultImage": {
+          "$ref": "#/definitions/SchemaUrlPath",
+          "description": "默认图片地址"
+        },
+        "fixedSize": {
+          "type": "boolean",
+          "description": "是否开启固定尺寸"
+        },
+        "fixedSizeClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "固定尺寸的 CSS类名"
         }
       },
       "required": [
@@ -42704,7 +42716,7 @@
           "$ref": "#/definitions/ImageControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|src|imageClassName|accept|allowInput|autoUpload|btnClassName|btnUploadClassName|compress|compressOptions|crop|reCropable|hideUploadButton|limit|maxLength|maxSize|receiver|showCompressOptions|multiple|joinValues|delimiter|extractValue|resetValue|thumbMode|thumbRatio|autoFill|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|src|imageClassName|accept|allowInput|autoUpload|btnClassName|btnUploadClassName|compress|compressOptions|crop|reCropable|hideUploadButton|limit|maxLength|maxSize|receiver|showCompressOptions|multiple|joinValues|delimiter|extractValue|resetValue|thumbMode|thumbRatio|autoFill|defaultImage|fixedSize|fixedSizeClassName|unique|columnClassName)$": {}
           }
         },
         {
@@ -46736,7 +46748,7 @@
           "$ref": "#/definitions/ImageControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|src|imageClassName|accept|allowInput|autoUpload|btnClassName|btnUploadClassName|compress|compressOptions|crop|reCropable|hideUploadButton|limit|maxLength|maxSize|receiver|showCompressOptions|multiple|joinValues|delimiter|extractValue|resetValue|thumbMode|thumbRatio|autoFill|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|src|imageClassName|accept|allowInput|autoUpload|btnClassName|btnUploadClassName|compress|compressOptions|crop|reCropable|hideUploadButton|limit|maxLength|maxSize|receiver|showCompressOptions|multiple|joinValues|delimiter|extractValue|resetValue|thumbMode|thumbRatio|autoFill|defaultImage|fixedSize|fixedSizeClassName|columnClassName|columnRatio)$": {}
           }
         },
         {

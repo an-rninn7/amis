@@ -6526,7 +6526,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/image.md": {
-      "url": "/amis/docs/zh-CN/components/form/image_7eeac34.js",
+      "url": "/amis/docs/zh-CN/components/form/image_4b258d2.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/input-group.md": {
