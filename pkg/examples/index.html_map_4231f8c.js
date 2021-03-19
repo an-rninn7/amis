@@ -5974,7 +5974,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/datascope-and-datachain.md": {
-      "url": "/amis/docs/zh-CN/concepts/datascope-and-datachain_f36e28c.js",
+      "url": "/amis/docs/zh-CN/concepts/datascope-and-datachain_e104b4a.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/template.md": {
