@@ -18727,6 +18727,10 @@
         "itemSchema": {
           "$ref": "#/definitions/SchemaCollection",
           "description": "可以自定义展示模板。"
+        },
+        "listClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "支持配置 list div 的 css 类名。 比如：flex justify-between"
         }
       },
       "required": [
@@ -42730,7 +42734,7 @@
           "$ref": "#/definitions/ListControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|submitOnDBClick|imageClassName|itemSchema|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|submitOnDBClick|imageClassName|itemSchema|listClassName|unique|columnClassName)$": {}
           }
         },
         {
@@ -46762,7 +46766,7 @@
           "$ref": "#/definitions/ListControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|submitOnDBClick|imageClassName|itemSchema|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|submitOnDBClick|imageClassName|itemSchema|listClassName|columnClassName|columnRatio)$": {}
           }
         },
         {
