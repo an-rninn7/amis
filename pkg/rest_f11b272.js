@@ -1,5 +1,3 @@
-;/*!examples/static/loader.js*/
-amis.require("../utils/loader");
 ;/*!examples/polyfills/cloest.ts*/
 amis.define("ba41ebe",function(){Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector),Element.prototype.closest||(Element.prototype.closest=function(e){var t=this;if(!document.documentElement.contains(t))return null;do{if(t.matches(e))return t;t=t.parentElement}while(null!==t);return null})});
 ;/*!examples/polyfills/index.ts*/
