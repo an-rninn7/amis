@@ -6785,6 +6785,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/spinner_91c1ad0.js",
       "type": "js"
     },
+    "docs/zh-CN/components/avatar.md": {
+      "url": "/amis/docs/zh-CN/components/avatar_c2739cf.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/audio.md": {
       "url": "/amis/docs/zh-CN/components/audio_b1c459b.js",
       "type": "js"
@@ -6800,7 +6804,7 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p9": {
-      "url": "/amis/pkg/rest_f11b272.js",
+      "url": "/amis/pkg/rest_b456f12.js",
       "type": "js"
     },
     "p4": {
