@@ -808,7 +808,7 @@
           "description": "配置 ajax 发送地址"
         },
         "feedback": {
-          "$ref": "#/definitions/DialogSchemaBase"
+          "$ref": "#/definitions/FeedbackDialog"
         },
         "reload": {
           "$ref": "#/definitions/SchemaReload"
@@ -965,7 +965,7 @@
     "SchemaTokenizeableString": {
       "type": "string"
     },
-    "DialogSchemaBase": {
+    "FeedbackDialog": {
       "type": "object",
       "properties": {
         "actions": {
@@ -1056,8 +1056,16 @@
           "description": "是否显示"
         },
         "visibleOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否显示表达式"
+          "type": "string",
+          "description": "可以用来配置 feedback 的出现条件"
+        },
+        "skipRestOnCancel": {
+          "type": "boolean",
+          "description": "feedback 弹框取消是否中断后续操作"
+        },
+        "skipRestOnConfirm": {
+          "type": "boolean",
+          "description": "feedback 弹框确认是否中断后续操作"
         }
       },
       "additionalProperties": false
@@ -1577,6 +1585,103 @@
         "dialog",
         "type"
       ],
+      "additionalProperties": false
+    },
+    "DialogSchemaBase": {
+      "type": "object",
+      "properties": {
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ActionSchema"
+          },
+          "description": "默认不用填写，自动会创建确认和取消按钮。"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容区域"
+        },
+        "bodyClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置 Body 容器 className"
+        },
+        "closeOnEsc": {
+          "type": "boolean",
+          "description": "是否支持按 ESC 关闭 Dialog"
+        },
+        "name": {
+          "$ref": "#/definitions/SchemaName"
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+            "full"
+          ],
+          "description": "Dialog 大小"
+        },
+        "title": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "请通过配置 title 设置标题"
+        },
+        "header": {
+          "$ref": "#/definitions/SchemaCollection"
+        },
+        "headerClassName": {
+          "$ref": "#/definitions/SchemaClassName"
+        },
+        "footer": {
+          "$ref": "#/definitions/SchemaCollection"
+        },
+        "confirm": {
+          "type": "boolean",
+          "description": "影响自动生成的按钮，如果自己配置了按钮这个配置无效。"
+        },
+        "showCloseButton": {
+          "type": "boolean",
+          "description": "是否显示关闭按钮"
+        },
+        "showErrorMsg": {
+          "type": "boolean",
+          "description": "是否显示错误信息"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        }
+      },
       "additionalProperties": false
     },
     "DrawerActionSchema": {
@@ -4240,7 +4345,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/FeedbackDialog"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -28368,7 +28473,7 @@
                   "description": "配置 ajax 发送地址"
                 },
                 "feedback": {
-                  "$ref": "#/definitions/DialogSchemaBase"
+                  "$ref": "#/definitions/FeedbackDialog"
                 },
                 "reload": {
                   "$ref": "#/definitions/SchemaReload"
@@ -36182,7 +36287,7 @@
         },
         "showPageInput": {
           "type": "boolean",
-          "description": "是否显示跳转表单"
+          "description": "是否显示快速跳转输入框"
         },
         "mode": {
           "type": "string",
@@ -36242,6 +36347,15 @@
         "visibleOn": {
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
+        },
+        "showPageInput": {
+          "type": "boolean",
+          "description": "是否显示快速跳转输入框"
+        },
+        "maxButtons": {
+          "type": "number",
+          "description": "最多显示多少个分页按钮。",
+          "default": 5
         },
         "inputName": {
           "type": "string",
@@ -38778,7 +38892,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -39300,7 +39414,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/FeedbackDialog"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -43332,7 +43446,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/FeedbackDialog"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -47223,7 +47337,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         },
         {
@@ -47604,7 +47718,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -47985,7 +48099,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -48366,7 +48480,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -48747,7 +48861,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -49128,7 +49242,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -49509,7 +49623,7 @@
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|maxButtons|inputName|outputName|perPage|position|body|rowClassName|cellClassName)$": {}
           }
         },
         {

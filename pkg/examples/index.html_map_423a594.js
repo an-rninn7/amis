@@ -6354,7 +6354,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/pagination-wrapper.md": {
-      "url": "/amis/docs/zh-CN/components/pagination-wrapper_b732bc7.js",
+      "url": "/amis/docs/zh-CN/components/pagination-wrapper_f7be86a.js",
       "type": "js"
     },
     "docs/zh-CN/components/panel.md": {
@@ -6774,7 +6774,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/dialog.md": {
-      "url": "/amis/docs/zh-CN/components/dialog_48df013.js",
+      "url": "/amis/docs/zh-CN/components/dialog_3b46a25.js",
       "type": "js"
     },
     "docs/zh-CN/components/drawer.md": {
