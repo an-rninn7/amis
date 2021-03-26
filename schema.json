@@ -28187,7 +28187,10 @@
             "text",
             "email",
             "url",
-            "password"
+            "password",
+            "native-date",
+            "native-time",
+            "native-number"
           ],
           "description": "表单项类型"
         },
