@@ -6626,7 +6626,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/text.md": {
-      "url": "/amis/docs/zh-CN/components/form/text_48306d0.js",
+      "url": "/amis/docs/zh-CN/components/form/text_514c27b.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/textarea.md": {
