@@ -309,6 +309,9 @@
           "$ref": "#/definitions/AudioSchema"
         },
         {
+          "$ref": "#/definitions/AvatarSchema"
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema"
         },
         {
@@ -2772,6 +2775,260 @@
       ],
       "additionalProperties": false,
       "description": "Audio 音频渲染器。 文档：https://baidu.gitee.io/amis/docs/components/audio"
+    },
+    "AvatarSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "avatar",
+          "description": "指定为用户头像控件"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "size": {
+          "type": "number",
+          "description": "大小"
+        },
+        "shape": {
+          "type": "string",
+          "enum": [
+            "circle",
+            "square"
+          ],
+          "description": "形状"
+        },
+        "icon": {
+          "type": "string",
+          "description": "图标"
+        },
+        "text": {
+          "type": "string",
+          "description": "文本"
+        },
+        "src": {
+          "type": "string",
+          "description": "图片地址"
+        },
+        "fit": {
+          "type": "string",
+          "enum": [
+            "fill",
+            "contain",
+            "cover",
+            "none",
+            "scale-down"
+          ],
+          "description": "图片相对于容器的缩放方式"
+        },
+        "alt": {
+          "type": "string",
+          "description": "图片无法显示时的替换文字地址"
+        },
+        "style": {
+          "type": "object",
+          "description": "自定义样式"
+        },
+        "badge": {
+          "$ref": "#/definitions/BadgeSchema",
+          "description": "角标"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Avatar 用户头像显示 文档：https://baidu.gitee.io/amis/docs/components/avatar"
+    },
+    "BadgeSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/SchemaType"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "动态控制是否显示"
+        },
+        "text": {
+          "type": "string",
+          "description": "文本内容"
+        },
+        "size": {
+          "type": "number",
+          "description": "大小"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "text",
+            "dot"
+          ],
+          "description": "角标类型"
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "top-right",
+            "top-left",
+            "bottom-right",
+            "bottom-left"
+          ],
+          "description": "角标位置"
+        },
+        "style": {
+          "type": "object",
+          "description": "角标的自定义样式"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "description": "Badge 角标。 文档：https://baidu.gitee.io/amis/docs/components/badge"
+    },
+    "SchemaType": {
+      "type": "string",
+      "enum": [
+        "form",
+        "button",
+        "submit",
+        "reset",
+        "alert",
+        "app",
+        "audio",
+        "avatar",
+        "button-group",
+        "button-toolbar",
+        "breadcrumb",
+        "card",
+        "cards",
+        "carousel",
+        "chart",
+        "collapse",
+        "color",
+        "container",
+        "crud",
+        "custom",
+        "date",
+        "static-date",
+        "datetime",
+        "static-datetime",
+        "time",
+        "static-time",
+        "month",
+        "static-month",
+        "dialog",
+        "divider",
+        "dropdown-button",
+        "drawer",
+        "each",
+        "flex",
+        "grid",
+        "grid-2d",
+        "hbox",
+        "icon",
+        "iframe",
+        "image",
+        "static-image",
+        "images",
+        "static-images",
+        "json",
+        "static-json",
+        "link",
+        "list",
+        "log",
+        "static-list",
+        "map",
+        "mapping",
+        "nav",
+        "page",
+        "pagination",
+        "pagination-wrapper",
+        "property",
+        "operation",
+        "panel",
+        "plain",
+        "text",
+        "progress",
+        "qrcode",
+        "qr-code",
+        "remark",
+        "search-box",
+        "service",
+        "sparkline",
+        "status",
+        "switch",
+        "table",
+        "static-table",
+        "tabs",
+        "html",
+        "tpl",
+        "tasks",
+        "vbox",
+        "video",
+        "wizard",
+        "wrapper",
+        "anchor-nav"
+      ]
     },
     "ButtonGroupSchema": {
       "type": "object",
@@ -38683,6 +38940,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -47128,6 +47392,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|tpl|popOver|quickEdit|copyable|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -47506,6 +47777,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inline|src|loop|autoPlay|rates|controls|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -47890,6 +48168,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -48268,6 +48553,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inline|src|loop|autoPlay|rates|controls|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -48652,6 +48944,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -49033,6 +49332,13 @@
           }
         },
         {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|columnClassName|width|height)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -49411,6 +49717,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inline|src|loop|autoPlay|rates|controls|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/AvatarSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|shape|icon|text|src|fit|alt|style|badge|rowClassName|cellClassName)$": {}
           }
         },
         {

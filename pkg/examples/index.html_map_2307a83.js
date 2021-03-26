@@ -5998,7 +5998,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/style.md": {
-      "url": "/amis/docs/zh-CN/concepts/style_0055b05.js",
+      "url": "/amis/docs/zh-CN/concepts/style_7ea78d7.js",
       "type": "js"
     },
     "docs/zh-CN/types/schemanode.md": {
@@ -6741,6 +6741,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/progress_492feb6.js",
       "type": "js"
     },
+    "docs/zh-CN/components/property.md": {
+      "url": "/amis/docs/zh-CN/components/property_d5ad0c2.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/qrcode.md": {
       "url": "/amis/docs/zh-CN/components/qrcode_efee8ed.js",
       "type": "js"
@@ -6795,6 +6799,10 @@ amis.require.resourceMap({
     },
     "docs/zh-CN/components/tasks.md": {
       "url": "/amis/docs/zh-CN/components/tasks_cb29509.js",
+      "type": "js"
+    },
+    "docs/zh-CN/components/badge.md": {
+      "url": "/amis/docs/zh-CN/components/badge_822835d.js",
       "type": "js"
     },
     "docs/zh-CN/components/wizard.md": {
